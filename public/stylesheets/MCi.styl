@@ -1,0 +1,186 @@
+//Primary
+MCiPink = #E3004F
+MCiDarkGreen = #17D92E
+MCiDarkBlue = #2230D3
+MCiLightGreen = #73EC5A
+MCiLightBlue = #537BE3
+
+//Secondary
+MCiPurple = #3D0093
+MCiOrange = #FF5B00
+MCiYellow = #E0E43B
+MCiMediumGray = #666677
+MCiMediumGrey = MCiMediumGray
+MCiDarkGray = #33333D
+MCiDarkGrey = MCiDarkGray
+
+//Tertiary
+MCiPaleBlue = #C5DFFF
+MCiPaleGray = #eee
+MCiPaleGrey = MCiPaleGray
+MCiLightGray = #9999AA
+MCiLightGrey = MCiLightGray
+MCiOffWhite = #F2F2F2
+MCiWhite = #FAFAFA
+
+//doodads
+buttony(color)
+  background-color color
+  gradient rgba(color,0.3) rgba(color,0.7)
+  box-shadow inset 0 0 8px 2px rgba(color, 0.8), 1px 1px rgba(color, 0.3)
+  cursor pointer
+  &:hover
+    gradient rgba(color,0.2) rgba(color,0.6)
+    box-shadow inset 0 0 5px 0 rgba(color, 0.7), 1px 1px rgba(color, 0.6)
+  &:active
+    gradient rgba(color,0.1) rgba(color,0.5)
+    box-shadow inset 0 0 5px 0 rgba(color, 0.6), 1px 1px rgba(color, 0.9)
+
+buttonyy(color)
+  background-color color
+  gradient rgba(color,0.7) rgba(color,0.9)
+  box-shadow inset 0 0 5px 0 rgba(color, 0.8)
+  cursor pointer
+  &:hover
+    gradient rgba(color,0.6) rgba(color,0.8)
+    box-shadow inset 0 0 5px 0 rgba(color, 0.7)
+  &:active
+    gradient rgba(color,0.5) rgba(color,0.7)
+    box-shadow inset 0 0 5px 0 rgba(color, 0.6)
+  
+//fonts
+@font-face 
+  font-family 'Schoolbell'
+  font-style normal
+  font-weight normal
+  src local('Schoolbell'), url('http://themes.googleusercontent.com/font?kit=BSqn7FernLolrt-MFco9Wi3USBnSvpkopQaUR-2r7iU') format('truetype')
+
+@font-face
+  font-family 'Sunshiney'
+  font-style normal
+  font-weight normal
+  src local('Sunshiney'), url('http://themes.googleusercontent.com/font?kit=Qyy6HDeMPsv9ES6PzMFxeKCWcynf_cDxXwCLxiixG1c') format('truetype')
+
+@font-face
+  font-family 'Maiden Orange'
+  font-style normal
+  font-weight normal
+  src local('Maiden Orange'), local('MaidenOrange-Regular'), url('http://themes.googleusercontent.com/font?kit=ZhKIA2SPisEwdhW7g0RUWibsRidxnYrfzLNRqJkHfFo') format('truetype')
+
+@font-face
+  font-family 'Cherry Cream Soda'
+  font-style normal
+  font-weight normal
+  src local('Cherry Cream Soda'), local('CherryCreamSoda'), url('http://themes.googleusercontent.com/font?kit=OrD-AUnFcZeeKa6F_c0_W7qBN36jQhVLTmQ9NDizP_4') format('truetype')
+
+//elements
+h1
+  font-size 1.3em
+
+h2
+  font-size 1.2em
+
+h3
+  font-size 1.1em
+
+a 
+  text-decoration none
+  cursor pointer
+  &:hover 
+    color MCiOrange
+    text-decoration underline
+
+button, input, select, textarea
+  border-radius 3px
+  cursor pointer
+
+button, input[type=submit]
+  gradient MCiLightBlue MCiDarkBlue
+  color MCiWhite
+  text-shadow 0 0 1px MCiDarkBlue
+  border 1px solid MCiDarkBlue
+  font-weight bold !important
+  box-shadow inset 0 0 2px 0 rgba(MCiDarkBlue, 0.8)
+  padding 3px
+  &:hover
+    gradient MCiPaleBlue MCiLightBlue
+    color MCiDarkGray
+    text-shadow 0 0 1px MCiWhite
+  &:active
+    gradient MCiOffWhite MCiPaleBlue
+    color MCiDarkGray
+    text-shadow 0 0 1px MCiWhite
+
+.fraction  
+  font-weight bold
+  text-align  center 
+  vertical-align  middle
+  display inline-block
+  padding 3px !important
+  div 
+    text-align center
+    padding 0px !important
+  .upper_line  
+    border-top solid 1px MCiDarkGrey
+
+.center 
+  text-align center
+    
+//sections
+body
+  margin 0
+  padding 0
+  background-color MCiPaleBlue
+  background-image url(/images/background_3transcircles.png)
+  background-repeat no-repeat
+  background-position -105px 0px
+  color MCiDarkGray
+  font-family 'Lato', Helvetica, Arial, sans-serif
+#foot
+  height 60px
+  position absolute
+  bottom 0px
+  min-width 100%
+  #footcontent
+    max-width 800px
+    color MCiLightGray
+    font-size 0.8em
+    margin-left auto
+    margin-right auto
+    #bugInfo, #dialog-message, #dialog-report, #dialog-settings, #strategy_textarea 
+      display none
+    #footinfo
+      float left
+      #standards 
+        img 
+          float left
+        div 
+          padding-left 30px
+      #copyright 
+        margin-top 5px
+        
+//widgets
+.keypad
+  margin-top 115px
+  background-color MCiOffWhite 
+  width 150px 
+  height 200px 
+  border: 2px solid MCiLightBlue 
+  border-radius 10px 
+  padding 5px 
+  .key
+    float left
+    width 40px 
+    height 40px 
+    text-align center 
+    margin 5px
+    border-radius 5px
+    cursor pointer 
+    buttony MCiPaleBlue
+    img
+      margin-top 5px
+      max-width 25px
+      max-height 25px
+  .num
+     font-size 30px
+

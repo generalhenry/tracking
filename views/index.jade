@@ -1,0 +1,43 @@
+#main
+  h1 Real time stats
+  #display
+script(src='http://cdn.socket.io/stable/socket.io.js')
+//script(src='http://yandex.st/raphael/1.5.2/raphael.min.js')
+script
+  var socket = new io.Socket();
+  var connected = false;
+  function connect () {
+    if( !connected ) {
+      socket.connect();
+      setTimeout( connect, 1000 );
+    }
+  }
+  connect();
+  socket.on('connect', function(){
+    connected = true;
+    console.log('connected');
+  });
+  var $display = $('#display');  
+  var displayHeight = $display.height();
+  var displayWidth = $display.width();
+  socket.on('message', function( message ){
+    console.log(message.data);
+    var $viewer = $('<div class=viewer></div>');
+    $display.append( $viewer );
+    $viewer.css({ left: -100, top: ~~( Math.random() * displayHeight ) });
+    $viewer.animate({ left: 900, opacity: 0.5 }, 50000, 'linear', function remove () {
+      $viewer.remove();
+      $viewer = null;
+    });
+    if( message.data === 'fake' ) {
+      $viewer.addClass('fake');
+    } else {
+      $viewer.text( message.data );
+      $viewer.attr('title', message.referer);
+    }
+  });
+  socket.on('disconnect', function() {
+    connected = false;
+    console.log( 'disconnected' );
+    connect();
+  });

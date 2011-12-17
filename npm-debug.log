@@ -1,0 +1,320 @@
+info it worked if it ends with ok
+verbose cli [ 'node',
+verbose cli   '/usr/local/bin/npm',
+verbose cli   '-g',
+verbose cli   'install',
+verbose cli   'geoip' ]
+info using npm@1.0.15
+info using node@v0.4.9
+verbose config file /root/.npmrc
+verbose config file /usr/local/etc/npmrc
+silly exec /usr/local/bin/node "/usr/local/lib/node_modules/npm/bin/npm-get-uid-gid.js" "nobody" 0
+silly output from getuid/gid {"uid":65534,"gid":0}
+silly output from getuid/gid 
+verbose into /usr/local/lib [ 'geoip' ]
+verbose cache add [ 'geoip', null ]
+info addNamed [ 'geoip', '' ]
+verbose addNamed [ null, '' ]
+verbose GET geoip
+verbose raw, before any munging geoip
+verbose url resolving [ 'http://registry.npmjs.org/', './geoip' ]
+verbose url resolved http://registry.npmjs.org/geoip
+verbose url parsed { protocol: 'http:',
+verbose url parsed   slashes: true,
+verbose url parsed   host: 'registry.npmjs.org',
+verbose url parsed   hostname: 'registry.npmjs.org',
+verbose url parsed   href: 'http://registry.npmjs.org/geoip',
+verbose url parsed   pathname: '/geoip' }
+verbose etag "ETR0PWTM93HA6C58GYWI0YF5I"
+verbose response http://registry.npmjs.org/geoip
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.1.0 (Erlang OTP/R14B03)',
+silly get cb     etag: '"ETR0PWTM93HA6C58GYWI0YF5I"',
+silly get cb     date: 'Fri, 08 Jul 2011 22:36:53 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag geoip from cache
+verbose GET geoip/0.4.1
+verbose raw, before any munging geoip/0.4.1
+verbose url resolving [ 'http://registry.npmjs.org/', './geoip/0.4.1' ]
+verbose url resolved http://registry.npmjs.org/geoip/0.4.1
+verbose url parsed { protocol: 'http:',
+verbose url parsed   slashes: true,
+verbose url parsed   host: 'registry.npmjs.org',
+verbose url parsed   hostname: 'registry.npmjs.org',
+verbose url parsed   href: 'http://registry.npmjs.org/geoip/0.4.1',
+verbose url parsed   pathname: '/geoip/0.4.1' }
+verbose etag "ETR0PWTM93HA6C58GYWI0YF5I"
+verbose response http://registry.npmjs.org/geoip/0.4.1
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.1.0 (Erlang OTP/R14B03)',
+silly get cb     etag: '"ETR0PWTM93HA6C58GYWI0YF5I"',
+silly get cb     date: 'Fri, 08 Jul 2011 22:36:53 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag geoip/0.4.1 from cache
+verbose bin dist [ '0.4-ares1.7.4-ev4.4-openssl0.9.8k-v83.1.8.25-linux-2.6.38.3-linode32',
+verbose bin dist   { shasum: '8597205856a37e7e91f93a552f425831b1213197',
+verbose bin dist     tarball: 'http://registry.npmjs.org/geoip/-/geoip-0.4.1.tgz' } ]
+verbose has wscript [ undefined,
+verbose has wscript   { file: '/root/.npm/geoip/0.4.1/package/package.json',
+verbose has wscript     contributors: false,
+verbose has wscript     serverjs: false,
+verbose has wscript     wscript: true } ]
+silly testEngine { name: 'geoip',
+silly testEngine   description: 'GeoIP binding for node',
+silly testEngine   version: '0.4.1',
+silly testEngine   homepage: 'http://github.com/kuno/GeoIP',
+silly testEngine   author: 
+silly testEngine    { name: 'Guan \'kuno\' Qing',
+silly testEngine      email: 'neokuno at Gmail dot com' },
+silly testEngine   contributors: 
+silly testEngine    [ { name: 'Vladimir Dronnikov',
+silly testEngine        email: 'dronnikov@gmail.com' },
+silly testEngine      { name: 'Konstantin Käfer',
+silly testEngine        email: 'github@kkaefer.com' },
+silly testEngine      { name: 'Joe Vennix', email: 'joevennix@gmail.com' },
+silly testEngine      { name: 'artems', email: 'tema.semenov@gmail.com' },
+silly testEngine      { name: 'Sven Steinheißer',
+silly testEngine        email: 'sven.steinheisser@googlemail.com' } ],
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/kuno/GeoIP.git' },
+silly testEngine   bugs: 
+silly testEngine    { email: 'neokuno@gmail.com',
+silly testEngine      url: 'http://github.com/kuno/GeoIP/issues' },
+silly testEngine   main: 'index.js',
+silly testEngine   directory: 
+silly testEngine    { src: './src',
+silly testEngine      test: './test',
+silly testEngine      misc: './misc',
+silly testEngine      sample: './sample',
+silly testEngine      benchmark: './benchmark' },
+silly testEngine   engine: { node: '>=0.4.0', npm: '1' },
+silly testEngine   script: { install: 'node-waf configure build' },
+silly testEngine   licences: 
+silly testEngine    [ { type: 'LGPL2.1',
+silly testEngine        url: 'http://www.gnu.org/licenses/lgpl-2.1.txt' } ],
+silly testEngine   _npmJsonOpts: 
+silly testEngine    { file: '/root/.npm/geoip/0.4.1/package/package.json',
+silly testEngine      contributors: false,
+silly testEngine      serverjs: false,
+silly testEngine      wscript: true },
+silly testEngine   _id: 'geoip@0.4.1',
+silly testEngine   scripts: { preinstall: 'node-waf clean || true; node-waf configure build' },
+silly testEngine   dependencies: {},
+silly testEngine   devDependencies: {},
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.15',
+silly testEngine   _nodeVersion: 'v0.4.9',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /root/.npm/geoip/0.4.1/package/package.json
+verbose loadDefaults geoip@0.4.1
+silly resolved [ { name: 'geoip',
+silly resolved     description: 'GeoIP binding for node',
+silly resolved     version: '0.4.1',
+silly resolved     homepage: 'http://github.com/kuno/GeoIP',
+silly resolved     author: 
+silly resolved      { name: 'Guan \'kuno\' Qing',
+silly resolved        email: 'neokuno at Gmail dot com' },
+silly resolved     contributors: 
+silly resolved      [ { name: 'Vladimir Dronnikov',
+silly resolved          email: 'dronnikov@gmail.com' },
+silly resolved        { name: 'Konstantin Käfer',
+silly resolved          email: 'github@kkaefer.com' },
+silly resolved        { name: 'Joe Vennix', email: 'joevennix@gmail.com' },
+silly resolved        { name: 'artems', email: 'tema.semenov@gmail.com' },
+silly resolved        { name: 'Sven Steinheißer',
+silly resolved          email: 'sven.steinheisser@googlemail.com' } ],
+silly resolved     repository: 
+silly resolved      { type: 'git',
+silly resolved        url: 'git://github.com/kuno/GeoIP.git' },
+silly resolved     bugs: 
+silly resolved      { email: 'neokuno@gmail.com',
+silly resolved        url: 'http://github.com/kuno/GeoIP/issues' },
+silly resolved     main: 'index.js',
+silly resolved     directory: 
+silly resolved      { src: './src',
+silly resolved        test: './test',
+silly resolved        misc: './misc',
+silly resolved        sample: './sample',
+silly resolved        benchmark: './benchmark' },
+silly resolved     engine: { node: '>=0.4.0', npm: '1' },
+silly resolved     script: { install: 'node-waf configure build' },
+silly resolved     licences: 
+silly resolved      [ { type: 'LGPL2.1',
+silly resolved          url: 'http://www.gnu.org/licenses/lgpl-2.1.txt' } ],
+silly resolved     _npmJsonOpts: 
+silly resolved      { file: '/root/.npm/geoip/0.4.1/package/package.json',
+silly resolved        contributors: false,
+silly resolved        serverjs: false,
+silly resolved        wscript: true },
+silly resolved     _id: 'geoip@0.4.1',
+silly resolved     scripts: { preinstall: 'node-waf clean || true; node-waf configure build' },
+silly resolved     dependencies: {},
+silly resolved     devDependencies: {},
+silly resolved     engines: { node: '*' },
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.0.15',
+silly resolved     _nodeVersion: 'v0.4.9',
+silly resolved     _defaultsLoaded: true } ]
+info into /usr/local/lib geoip@0.4.1
+info installOne geoip@0.4.1
+info unbuild /usr/local/lib/node_modules/geoip
+verbose from cache /root/.npm/geoip/0.4.1/package/package.json
+verbose mkdir done: /usr/local/lib/node_modules/___geoip.npm 755
+verbose unpack_ uid, gid [ 65534, 0 ]
+verbose unpackTarget /usr/local/lib/node_modules/geoip
+silly gunzTarPerm modes [ '755', '644' ]
+verbose success gzip "--decompress" "--stdout" "/root/.npm/geoip/0.4.1/package.tgz"
+verbose success tar "-mvxpf" "-" "--no-same-owner" "-C" "/usr/local/lib/node_modules/___geoip.npm"
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/wscript
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/package.json
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/LICENCE
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/.npmignore
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/index.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/.gitignore
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/benchmark/
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/benchmark/city.coffee
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/benchmark/netspeed.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/benchmark/city.old.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/benchmark/region.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/benchmark/test.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/benchmark/index.coffee
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/benchmark/city.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/benchmark/org.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/benchmark/country.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/src/
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/src/city.cc
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/src/global.h
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/src/test.cc
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/src/country.cc
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/src/region.h
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/src/utils.h
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/src/global.cc
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/src/city.h
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/src/netspeed.h
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/src/netspeed.cc
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/src/org.h
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/src/country.h
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/src/node_geoip.h
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/src/test.h
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/src/org.cc
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/src/region.cc
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/src/utils.cc
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/src/init.cc
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/test/
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/test/v0.4.3.report
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/test/v0.4.6.report
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/test/netspeed.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/test/region.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/test/utils.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/test/v0.4.0.report
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/test/v0.4.4.report
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/test/test.sh
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/test/v0.4.7.report
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/test/city.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/test/org.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/test/v0.4.8.report
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/test/v0.4.2.report
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/test/v0.4.5.report
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/test/country.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/test/v0.4.1.report
+silly asyncMap in gTP /usr/local/lib/node_modules/___geoip.npm/package/test/neco_test.sh
+verbose gunzed /usr/local/lib/node_modules/___geoip.npm/package
+verbose rm'ed /usr/local/lib/node_modules/geoip
+verbose renamed [ '/usr/local/lib/node_modules/___geoip.npm/package',
+verbose renamed   '/usr/local/lib/node_modules/geoip' ]
+verbose has wscript [ undefined,
+verbose has wscript   { file: '/usr/local/lib/node_modules/geoip/package.json',
+verbose has wscript     contributors: false,
+verbose has wscript     serverjs: false,
+verbose has wscript     wscript: true } ]
+silly testEngine { name: 'geoip',
+silly testEngine   description: 'GeoIP binding for node',
+silly testEngine   version: '0.4.1',
+silly testEngine   homepage: 'http://github.com/kuno/GeoIP',
+silly testEngine   author: 
+silly testEngine    { name: 'Guan \'kuno\' Qing',
+silly testEngine      email: 'neokuno at Gmail dot com' },
+silly testEngine   contributors: 
+silly testEngine    [ { name: 'Vladimir Dronnikov',
+silly testEngine        email: 'dronnikov@gmail.com' },
+silly testEngine      { name: 'Konstantin Käfer',
+silly testEngine        email: 'github@kkaefer.com' },
+silly testEngine      { name: 'Joe Vennix', email: 'joevennix@gmail.com' },
+silly testEngine      { name: 'artems', email: 'tema.semenov@gmail.com' },
+silly testEngine      { name: 'Sven Steinheißer',
+silly testEngine        email: 'sven.steinheisser@googlemail.com' } ],
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/kuno/GeoIP.git' },
+silly testEngine   bugs: 
+silly testEngine    { email: 'neokuno@gmail.com',
+silly testEngine      url: 'http://github.com/kuno/GeoIP/issues' },
+silly testEngine   main: 'index.js',
+silly testEngine   directory: 
+silly testEngine    { src: './src',
+silly testEngine      test: './test',
+silly testEngine      misc: './misc',
+silly testEngine      sample: './sample',
+silly testEngine      benchmark: './benchmark' },
+silly testEngine   engine: { node: '>=0.4.0', npm: '1' },
+silly testEngine   script: { install: 'node-waf configure build' },
+silly testEngine   licences: 
+silly testEngine    [ { type: 'LGPL2.1',
+silly testEngine        url: 'http://www.gnu.org/licenses/lgpl-2.1.txt' } ],
+silly testEngine   _npmJsonOpts: 
+silly testEngine    { file: '/usr/local/lib/node_modules/geoip/package.json',
+silly testEngine      contributors: false,
+silly testEngine      serverjs: false,
+silly testEngine      wscript: true },
+silly testEngine   _id: 'geoip@0.4.1',
+silly testEngine   scripts: { preinstall: 'node-waf clean || true; node-waf configure build' },
+silly testEngine   dependencies: {},
+silly testEngine   devDependencies: {},
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.15',
+silly testEngine   _nodeVersion: 'v0.4.9',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /usr/local/lib/node_modules/geoip/package.json
+verbose loadDefaults geoip@0.4.1
+info preinstall geoip@0.4.1
+verbose unsafe-perm in lifecycle false
+verbose Setting uid from 0 nobody
+verbose stack at uid setting Error
+verbose stack at uid setting     at exec (/usr/local/lib/node_modules/npm/lib/utils/exec.js:35:17)
+verbose stack at uid setting     at Array.0 (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:110:5)
+verbose stack at uid setting     at EventEmitter._tickCallback (node.js:126:26)
+silly exec sh "-c" "node-waf clean || true; node-waf configure build"
+info geoip@0.4.1 Failed to exec preinstall script
+ERR! error installing geoip@0.4.1 Error: geoip@0.4.1 preinstall: `node-waf clean || true; node-waf configure build`
+ERR! error installing geoip@0.4.1 `sh "-c" "node-waf clean || true; node-waf configure build"` failed with 1
+ERR! error installing geoip@0.4.1     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/exec.js:49:20)
+ERR! error installing geoip@0.4.1     at ChildProcess.emit (events.js:67:17)
+ERR! error installing geoip@0.4.1     at ChildProcess.onexit (child_process.js:192:12)
+info unbuild /usr/local/lib/node_modules/geoip
+verbose from cache /usr/local/lib/node_modules/geoip/package.json
+info preuninstall geoip@0.4.1
+info uninstall geoip@0.4.1
+verbose unbuild geoip@0.4.1 [ true,
+verbose unbuild geoip@0.4.1   '/usr/local/lib/node_modules',
+verbose unbuild geoip@0.4.1   '/usr/local/lib/node_modules' ]
+info postuninstall geoip@0.4.1
+verbose installOne cb geoip@0.4.1
+ERR! geoip@0.4.1 preinstall: `node-waf clean || true; node-waf configure build`
+ERR! `sh "-c" "node-waf clean || true; node-waf configure build"` failed with 1
+ERR! 
+ERR! Failed at the geoip@0.4.1 preinstall script.
+ERR! This is most likely a problem with the geoip package,
+ERR! not with npm itself.
+ERR! Tell the author that this fails on your system:
+ERR!     node-waf clean || true; node-waf configure build
+ERR! You can get their info via:
+ERR!     npm owner ls geoip
+ERR! There is likely additional logging output above.
+ERR! 
+ERR! System Linux 2.6.38.3-linode32
+ERR! command "node" "/usr/local/bin/npm" "-g" "install" "geoip"
+verbose exit [ 1, true ]
